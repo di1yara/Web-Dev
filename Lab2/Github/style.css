@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background:white ;
+    color:#212529;
+    margin:0;
+    padding: 55px 24px 80px;
+    text-align: center;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.hero{
+    margin-bottom:25px;
+}
+h1.title{
+    font-size:55px;
+    font-weight: 800px;
+    margin-bottom: 20px;
+    letter-spacing: -1;
+}
+.subtitle{
+    max-width:800px;
+    margin:0 auto 25px;
+    color:#959092;
+    font-size:15px;
+    line-height: 1.5;
+}
+
+.start {
+    display: inline-block;
+    background-color:#25292c;
+    color:#fcffee;
+    padding:12px 22px;
+    margin-bottom: 44px;
+    border-radius:7px;
+    font-weight:600px;
+    text-decoration:none;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.card{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid #b2b8bc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.price{
+    font-family:monospace;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+.per{
+    position: relative;
+    top: -0.5em;
+}
+
+.cost{
+    font-size:49px;
+    font-weight: 600px;
+}
+
+.price sup{
+    color:#212529;
+    font-size:20px;
+    font-family: monospace;
+    position: relative;
+    top: -0.9em;
+    padding-right: 6px;
+}
+
+.price sub{
+    font-weight :600px;
+    font-size: 20px;
+    position: relative;
+    top:-0.2em;
+    padding:0 5px;
+}
+
+.button a{
+    text-decoration: none;
+    display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+.fill-button {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    background: linear-gradient(rgb(61, 61, 61), black);
+    color: white;
+    margin-bottom: 44px;
+}
+.empty-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(142, 142, 142);
+    text-decoration: none;
+    margin-bottom: 44px;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2d333b;
+    padding: 4px 0;
+}
+
+summary::before {
+    content: "›";
+    transform: translateY(-1px);
+    color: #57606a;
+    font-size: 18px;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.decsription {
+    color: #57606a;
+    padding: 6px 0 4px 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.addons {
+    margin-top: 64px;
+    text-align: center;
+}
+.addons h2 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 12px;
+}
+.addon-card {
+    background: #fff;
+    border: 1px solid #d0d7de;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(27, 31, 36, 0.08);
+    transition: 0.3s ease;
+}
+.addon-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(27, 31, 36, 0.16);
+}
+.addon-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.addon-card p {
+    color: #57606a;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.addon-card a {
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .addon-grid {
+        grid-template-columns: 1fr;
+    }
+    .button {
+        flex-direction: column;
+    }
+}
