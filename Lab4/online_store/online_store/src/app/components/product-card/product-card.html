@@ -1,0 +1,17 @@
+
+<div class="product-card">
+  <img [src]="product().imageUrl" [alt]="product().name" />
+
+  <h3>{{ product().name }}</h3>
+  <span class="rating">⭐ {{ product().rating }}</span>
+
+  <p class="description">{{ product().description }}</p> 
+
+  <strong class="price">{{ product().price }} ₸</strong>
+  
+  <button class="buy-btn">Добавить в корзину</button>
+  
+  <button (click)="shareToWhatsApp()" class="share-btn">
+    Поделиться через WhatsApp
+  </button>
+</div>
