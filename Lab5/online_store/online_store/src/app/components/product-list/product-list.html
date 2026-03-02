@@ -1,0 +1,23 @@
+<h1 class="title">Online Store</h1>
+
+<div class="categories">
+  @for (category of categories; track category.id) {
+    <button
+      (click)="changeCategory(category.id)"
+      [class.active]="currentCategoryId === category.id">
+      {{ category.name }}
+    </button>
+  }
+</div>
+
+<div class="product-list-container">
+  <div class="product-grid">
+    @for (product of filteredProducts; track product.id) {
+      <app-product-card
+        [product]="product"
+        (like)="likeProduct($event)"
+        (delete)="deleteProduct($event)">
+      </app-product-card>
+    }
+  </div>
+</div>
