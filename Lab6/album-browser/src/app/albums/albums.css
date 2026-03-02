@@ -1,0 +1,80 @@
+body {
+    background-image: url('girl.jpeg');
+    background-size: cover;          /* Растягивает картинку, сохраняя пропорции */
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-attachment: fixed;    /* Фиксирует фон, чтобы он не уплывал при скролле */
+    color: #f0e9e9;
+    min-height: 100vh;               /* Минимальная высота — весь экран */
+    margin: 0;                       /* Убирает стандартные отступы браузера */
+}
+
+.title {
+  cursor: pointer;
+  color: #1976d2;
+}
+
+button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.loading {
+  font-weight: bold;
+}
+.albums-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.album-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.album-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.album-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.album-link:hover {
+  color: #1976d2; /* Цвет при наведении */
+}
+
+/* Красивая красная кнопка удаления */
+.delete-btn {
+  background-color: hsl(19, 100%, 65%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #e74444;
+}

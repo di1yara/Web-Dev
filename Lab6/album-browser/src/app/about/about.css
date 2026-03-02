@@ -1,0 +1,52 @@
+body {
+    background-image: url(girl.jpeg);
+    background-size: cover;         
+    background-repeat: no-repeat;         
+    background-position: center;
+    color: #333;
+    height:100vh;
+    
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Заголовок страницы */
+.page-container h1 {
+  color: #ce7157;
+  margin-top: 0;
+  border-bottom: 2px solid #e3f2fd;
+  padding-bottom: 10px;
+}
+
+/* Текст описания */
+.page-container p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Кнопка действия (например, "Перейти к альбомам") */
+.action-btn {
+  display: inline-block;
+  background-color: #ce7157;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #ce7157;
+}

@@ -1,0 +1,17 @@
+<pre>{{ album | json }}</pre>
+
+<div class="page-container" *ngIf="album">
+  <h1>Album #{{ album.id }}</h1>
+  
+  <div class="info">
+    <p><strong>User ID:</strong> {{ album.userId }}</p>
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="album.title" class="title-input">
+  </div>
+
+  <div class="actions">
+    <button (click)="saveTitle()" class="action-btn save">Save</button>
+    <button [routerLink]="['/albums', album.id, 'photos']" class="action-btn photos">View Photos</button>
+    <button [routerLink]="['/albums']" class="action-btn back">Back</button>
+  </div>
+</div>

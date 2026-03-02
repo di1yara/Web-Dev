@@ -1,0 +1,28 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.photo-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.photo-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-title {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  /* Hover effect requirement */
+  display: none; 
+}
+
+.photo-card:hover .photo-title {
+  display: block;
+}
